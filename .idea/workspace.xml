@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a46978c7-84f0-4c05-a842-28513a1f9ad9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/StackAndQueue/HanoiProblem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/StackAndQueue/MaxWindow.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/basic/tree/BiTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/string/StringReverse.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StackAndQueue/CatDogQueue/CatDogQueue.java" afterPath="$PROJECT_DIR$/src/StackAndQueue/CatDogQueue/CatDogQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StackAndQueue/StackSortStack.java" afterPath="$PROJECT_DIR$/src/StackAndQueue/StackSortStack.java" />
     </list>
     <ignored path="Algorithm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +30,8 @@
       <file leaf-file-name="BiTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/basic/tree/BiTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+            <state relative-caret-position="160">
+              <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -898,12 +891,20 @@
       <workItem from="1470789575055" duration="12835000" />
       <workItem from="1471316868873" duration="108000" />
       <workItem from="1471407563227" duration="4189000" />
-      <workItem from="1472734658867" duration="12675000" />
+      <workItem from="1472734658867" duration="12842000" />
     </task>
+    <task id="LOCAL-00001" summary="一、程序员面试题:StackAndQueue包下,新增:1.用栈的方式解决汉诺塔问题; string包下,新增:StringReverse.java 句子单词翻转&#10;二、basic包中,二叉树的深度优先(栈)和广度优先遍历(队列)">
+      <created>1473309795745</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1473309795745</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45067000" />
+    <option name="totallyTimeSpent" value="45234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -946,6 +947,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="一、程序员面试题:StackAndQueue包下,新增:1.用栈的方式解决汉诺塔问题; string包下,新增:StringReverse.java 句子单词翻转&#10;二、basic包中,二叉树的深度优先(栈)和广度优先遍历(队列)" />
+    <option name="LAST_COMMIT_MESSAGE" value="一、程序员面试题:StackAndQueue包下,新增:1.用栈的方式解决汉诺塔问题; string包下,新增:StringReverse.java 句子单词翻转&#10;二、basic包中,二叉树的深度优先(栈)和广度优先遍历(队列)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1337,8 +1342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/basic/tree/BiTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+        <state relative-caret-position="160">
+          <caret line="114" column="23" selection-start-line="114" selection-start-column="23" selection-end-line="114" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
