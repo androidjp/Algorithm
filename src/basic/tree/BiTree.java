@@ -47,10 +47,9 @@ public class BiTree {
     public static void preTraverse(BiTree tree) {
         if (tree == null)
             return;
-        System.out.print(tree.data + " [");
+        System.out.print(tree.data + " ");
         preTraverse(tree.left);
         preTraverse(tree.right);
-        System.out.print("] ");
 
     }
 
@@ -62,13 +61,9 @@ public class BiTree {
     public static void orderTraverse(BiTree tree) {
         if (tree == null)
             return;
-        System.out.print(" [");
         orderTraverse(tree.left);
-        System.out.print("] ");
-        System.out.print(tree.data);
-        System.out.print(" [");
+        System.out.print(tree.data +" ");
         orderTraverse(tree.right);
-        System.out.print("] ");
 
     }
 
@@ -80,10 +75,8 @@ public class BiTree {
     public static void postTraverse(BiTree tree) {
         if (tree == null)
             return;
-        System.out.print(" [");
         postTraverse(tree.left);
         postTraverse(tree.right);
-        System.out.print("] ");
         System.out.print(tree.data + " ");
     }
 
@@ -134,26 +127,32 @@ public class BiTree {
 
     public static void main(String[] args) {
         BiTree tree = new BiTree();
+        ///(根节点 -> 左孩子 -> 右孩子)创建二叉树,如输入: 1 2a 3a # 4b # # 3b # # 2b # #
         tree = createTree();
         BiTree ptr = tree;
 
+        //先序遍历
         preTraverse(ptr);
         System.out.println();
+
+        //中序遍历
         ptr = tree;
         orderTraverse(ptr);
         System.out.println();
+
+        //后序遍历
         ptr = tree;
         postTraverse(ptr);
         System.out.println();
 
+        //深度优先遍历
         ptr = tree;
         depthFirstTraverse(ptr);
         System.out.println();
 
+        //广度优先遍历
         ptr = tree;
         breadFirstTraverse(ptr);
         System.out.println();
-
-
     }
 }
