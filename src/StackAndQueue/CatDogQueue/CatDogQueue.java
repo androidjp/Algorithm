@@ -36,7 +36,7 @@ public class CatDogQueue {
      */
     public Pet pollAll(){
         if (!this.dogQ.isEmpty() && !this.catQ.isEmpty()){
-            if (this.dogQ.peek().getCount()< this.catQ.peek().getCount()){
+            if (this.dogQ.peek().getCount()< this.catQ.peek().getCount()){///选择两个队列对头时间戳更小的那个,出队
                 return this.dogQ.poll().getPet();
             }else{
                 return this.catQ.poll().getPet();
