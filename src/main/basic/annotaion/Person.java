@@ -7,11 +7,12 @@ import main.basic.annotaion.anno.ID;
 /**
  * Created by androidjp on 2016/11/14.
  */
-@Entity
+@Entity("person")
 public class Person {
-    @ID
+    @ID("pid")
+    @Column(autoIncrement=true,length = 10)
     public Integer id;
-    @Column
+    @Column(value = "pname",length = 255)
     public String name;
 
     public Integer getId() {

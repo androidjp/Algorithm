@@ -62,7 +62,7 @@ public class ColumnInfo {
             sql.append(" PRIMARY KEY");
         }
         if (this.isAutoIncrement){
-            sql.append(" AUTO INCREMENT");
+            sql.append(" AUTO_INCREMENT");
         }
         if (!this.nullable){
             sql.append(" NOT NULL");
