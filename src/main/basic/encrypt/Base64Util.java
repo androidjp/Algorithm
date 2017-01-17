@@ -30,7 +30,7 @@ import java.util.Base64;
  * ，这样出错的可能性就大降低了。
  * Created by androidjp on 2017/1/16.
  */
-public class base64Util {
+public class Base64Util {
 
     public static void main(String[] args){
         String pwd = "123456";
