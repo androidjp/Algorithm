@@ -151,7 +151,7 @@ public class FileIOUtil {
      * @param filePath
      * @param pastePath
      */
-    public static void readFileByCharacter(String filePath, String pastePath) {
+    public static void copyFileByCharacter(String filePath, String pastePath) {
         File file = new File(filePath);
         // FileReader:用来读取字符文件的便捷类。  
         FileReader reader = null;
@@ -182,7 +182,7 @@ public class FileIOUtil {
      *
      * @param filePath
      */
-    public static void readFileByLine(String filePath, String pastePath) {
+    public static void copyFileByLine(String filePath, String pastePath) {
         File file = new File(filePath);
         // BufferedReader:从字符输入流中读取文本，缓冲各个字符，从而实现字符、数组和行的高效读取。  
         BufferedReader bufReader = null;
@@ -216,7 +216,7 @@ public class FileIOUtil {
      *
      * @param filePath
      */
-    public static void readFileByBybeBuffer(String filePath, String pastePath) {
+    public static void copyFileByBybeBuffer(String filePath, String pastePath) {
         FileInputStream in = null;
         FileOutputStream out = null;
         try {
@@ -275,7 +275,24 @@ public class FileIOUtil {
     /**
      * 使用RandomAccessFile读文件
      */
-    public static void readByRandomAccessFile(String filePath) {
-
+    public static void readByRandomAccessFile(String filePath) throws IOException{
+        File file  = new File(filePath);
+        if (!file.exists())
+            file.createNewFile();
+        RandomAccessFile raf = new RandomAccessFile(file,"rw");
+        int max = 0x7fffffff;
+        char text ='你';
+        System.out.println("max本身为："+max+"，而Integer.MAXVALUE为："+ Integer.MAX_VALUE);
+//        raf.write(max>>>24);
+//        raf.write(max>>>16);
+//        raf.write(max>>>8);
+//        raf.write(max);
+        raf.writeChar(text);
+        raf.close();
+        ///
+        raf = new RandomAccessFile(file,"r");
+        System.out.println(raf.readChar());
+        raf.close();
     }
+
 }
